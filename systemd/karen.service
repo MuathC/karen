@@ -1,0 +1,15 @@
+[Unit]
+Description=Karen PR reviewer: answers /karen review comments
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+WorkingDirectory=%h/dev/karen
+ExecStart=/usr/bin/python3 -m karen watch
+Environment=PATH=%h/.local/bin:/usr/local/bin:/usr/bin:/bin
+Restart=on-failure
+RestartSec=60
+RestartPreventExitStatus=3
+
+[Install]
+WantedBy=default.target

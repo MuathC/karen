@@ -10,9 +10,9 @@ subscription.
 | `/karen full review` | Reviews the whole pull request again. |
 | `/karen review approve` | Reviews the whole pull request and approves it if nothing important is wrong. |
 
-Karen reacts 👀 when it starts and 👍 when the review is posted. Problems are posted
-as inline comments, each with a one-click fix when there is one and a prompt you can
-paste into a coding agent.
+Karen reacts 👀 when it starts and 👍 when the review is posted. Findings appear as
+inline comments with a prompt you can paste into a coding agent and, where available,
+a one-click fix.
 
 ## How it works
 
